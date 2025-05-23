@@ -31,6 +31,39 @@ nyiks generate nft --name "MyNFT" --symbol "MNFT"
 
 ---
 
+## 📁 Folder Structure
+
+nyiks-cli/
+├── src/
+│   ├── commands/    
+│   │   ├── init.ts
+│   │   ├── generate.ts
+│   │   ├── test.ts
+│   │   └── deploy.ts
+│   │
+│   ├── templates/          
+│   │   ├── nft.template.clar
+│   │   ├── ft.template.clar
+│   │   ├── dao.template.clar
+│   │   └── ...
+│   │
+│   ├── utils/             
+│   │   ├── fileWriter.ts
+│   │   ├── templateEngine.ts
+│   │   └── parameterParser.ts
+│   │
+│   ├── config/            
+│   │   └── cli-config.ts
+│   │
+│   └── index.ts             
+│
+├── bin/
+│   └── nyiks-cli.js         
+├── package.json
+├── tsconfig.json
+├── .gitignore
+└── README.md
+
 ## 📅 Project Roadmap
 
 ### Milestone 1: Foundation
