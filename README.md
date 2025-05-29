@@ -98,4 +98,16 @@ nyiks-cli/
 ## 🤝 Related Projects
 - [nyiks-ui](https://github.com/zorex-tech/nyiks-ui) – Frontend interface for the same contract generation engine
 
+## 🙌 Contributing
+
+We welcome contributions from the community! If you'd like to contribute to Nyiks CLI, please follow the guidelines in our [CONTRIBUTING.md](./CONTRIBUTING.md) file. Here’s how to get started:
+
+Fork this repository.
+
+- Create a new branch for your feature or fix.
+- Commit your changes with descriptive messages.
+- Open a pull request with a clear description of your changes.
+
+For detailed contribution instructions, please refer to the [CONTRIBUTING.md](./CONTRIBUTING.md) file.
+
 ---
