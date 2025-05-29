@@ -1,5 +1,7 @@
 ;; __NAME__ SIP-009 Non-Fungible Token Contract
 
+(impl-trait __TRAIT__)
+
 (define-trait sip009-nft-trait
   (
     (get-last-token-id () (response uint uint))
@@ -54,5 +56,3 @@
 (define-read-only (get-symbol) "__SYMBOL__")
 
 (define-read-only (get-name) "__NAME__")
-
-(impl-trait .sip009-nft-trait)
