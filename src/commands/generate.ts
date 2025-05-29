@@ -17,6 +17,12 @@ export function generateCommand() {
       const cwd = process.cwd();
       const contractsDir = path.join(cwd, "contracts");
 
+      const allowedTypes = ["ft", "nft"];
+      if (!allowedTypes.includes(options.type)) {
+        console.log(chalk.red(`❌ Invalid contract type: ${options.type}`));
+        process.exit(1);
+      }
+
       // Check if contracts directory exists
       if (!(await fs.pathExists(contractsDir))) {
         console.log(

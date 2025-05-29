@@ -25,7 +25,7 @@ npm install -g .
 ### 💻 Usage
 ```bash
 nyiks init <projectName>
-nyiks generate dao --name "MyDAO"
+ nyiks generate --name "Fungible Token" --type "ft" --max-supply 1000000 --symbol "FT"
 nyiks generate nft --name "MyNFT" --symbol "MNFT"
 ```
 
