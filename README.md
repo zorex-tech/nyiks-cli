@@ -24,12 +24,45 @@ npm install -g .
 
 ### 💻 Usage
 ```bash
-nyiks init
-nyiks generate dao --name "MyDAO"
+nyiks init <projectName>
+ nyiks generate --name "Fungible Token" --type "ft" --max-supply 1000000 --symbol "FT"
 nyiks generate nft --name "MyNFT" --symbol "MNFT"
 ```
 
 ---
+
+## 📁 Folder Structure
+
+nyiks-cli/
+├── src/
+│   ├── commands/    
+│   │   ├── init.ts
+│   │   ├── generate.ts
+│   │   ├── test.ts
+│   │   └── deploy.ts
+│   │
+│   ├── templates/          
+│   │   ├── nft.template.clar
+│   │   ├── ft.template.clar
+│   │   ├── dao.template.clar
+│   │   └── ...
+│   │
+│   ├── utils/             
+│   │   ├── fileWriter.ts
+│   │   ├── templateEngine.ts
+│   │   └── parameterParser.ts
+│   │
+│   ├── config/            
+│   │   └── cli-config.ts
+│   │
+│   └── index.ts             
+│
+├── bin/
+│   └── nyiks-cli.js         
+├── package.json
+├── tsconfig.json
+├── .gitignore
+└── README.md
 
 ## 📅 Project Roadmap
 
@@ -64,5 +97,17 @@ nyiks generate nft --name "MyNFT" --symbol "MNFT"
 
 ## 🤝 Related Projects
 - [nyiks-ui](https://github.com/zorex-tech/nyiks-ui) – Frontend interface for the same contract generation engine
+
+## 🙌 Contributing
+
+We welcome contributions from the community! If you'd like to contribute to Nyiks CLI, please follow the guidelines in our [CONTRIBUTING.md](./CONTRIBUTING.md) file. Here’s how to get started:
+
+Fork this repository.
+
+- Create a new branch for your feature or fix.
+- Commit your changes with descriptive messages.
+- Open a pull request with a clear description of your changes.
+
+For detailed contribution instructions, please refer to the [CONTRIBUTING.md](./CONTRIBUTING.md) file.
 
 ---
