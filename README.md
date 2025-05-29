@@ -24,7 +24,7 @@ npm install -g .
 
 ### 💻 Usage
 ```bash
-nyiks init
+nyiks init <projectName>
 nyiks generate dao --name "MyDAO"
 nyiks generate nft --name "MyNFT" --symbol "MNFT"
 ```
